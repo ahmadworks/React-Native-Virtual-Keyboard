@@ -59,7 +59,7 @@ class VirtualKeyboard extends Component {
 	Backspace() {
 		return (
 			<TouchableOpacity accessibilityLabel='backspace' style={styles.backspace} onPress={() => { this.onPress('back') }}>
-				<Image source={this.props.backspaceImg} resizeMode='contain' style={this.props.applyBackspaceTint && ({ tintColor: this.props.color })} />
+				<Image source={this.props.backspaceImg} resizeMode='contain' style={this.props.applyBackspaceTint && ({ tintColor: this.props.color, width: 28 })} />
 			</TouchableOpacity>
 		);
 	}
